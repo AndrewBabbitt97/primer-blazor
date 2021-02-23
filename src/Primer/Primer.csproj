@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -16,6 +16,10 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RestoreSources>
+      https://api.nuget.org/v3/index.json;
+      $(MSBuildThisFileDirectory)/../Primer.IconGenerator/bin/$(Configuration)/
+    </RestoreSources>
   </PropertyGroup>
   
   <ItemGroup>
@@ -23,7 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AdditionalFiles Include="Components/Icons/icons.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.3" />
+    <PackageReference Include="Primer.IconGenerator" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +40,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Primer.IconGenerator\Primer.IconGenerator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
   </ItemGroup>
 
 </Project>

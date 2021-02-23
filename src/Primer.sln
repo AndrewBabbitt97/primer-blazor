@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Primer", "Primer\Primer.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primer.Documentation", "Primer.Documentation\Primer.Documentation.csproj", "{450697FC-E984-494D-8E5A-97900F9B117A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primer.IconGenerator", "Primer.IconGenerator\Primer.IconGenerator.csproj", "{D01BD246-2D8E-4990-B6FC-7B7577B6C37B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{450697FC-E984-494D-8E5A-97900F9B117A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{450697FC-E984-494D-8E5A-97900F9B117A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{450697FC-E984-494D-8E5A-97900F9B117A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01BD246-2D8E-4990-B6FC-7B7577B6C37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01BD246-2D8E-4990-B6FC-7B7577B6C37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01BD246-2D8E-4990-B6FC-7B7577B6C37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01BD246-2D8E-4990-B6FC-7B7577B6C37B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,7 @@ namespace Primer.Components
         /// The color of the flash
         /// </summary>
         [Parameter]
-        public PrimerFlashColor Color { get; set; }
+        public PrimerFlashColor Color { get; set; } = PrimerFlashColor.Default;
 
         /// <summary>
         /// If the flash is full width

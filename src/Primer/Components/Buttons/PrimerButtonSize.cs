@@ -1,23 +1,23 @@
 ﻿namespace Primer.Components
 {
     /// <summary>
-    /// The flash colors
+    /// The button sizes
     /// </summary>
-    public enum PrimerFlashColor
+    public enum PrimerButtonSize
     {
         /// <summary>
-        /// Warning
+        /// Small
         /// </summary>
-        Warn,
+        Small,
 
         /// <summary>
-        /// Error
+        /// Normal
         /// </summary>
-        Error,
+        Normal,
 
         /// <summary>
-        /// Success
+        /// Large
         /// </summary>
-        Success
+        Large
     }
 }

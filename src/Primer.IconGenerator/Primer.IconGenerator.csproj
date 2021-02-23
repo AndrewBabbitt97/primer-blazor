@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.1.0</Version>
+    <Authors>AndrewBabbitt97</Authors>
+    <Product>Primer</Product>
+    <Description>Primer Icon Generator</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>nuget.png</PackageIcon>
+    <RepositoryUrl>https://github.com/AndrewBabbitt97/primer-blazor</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>primer;components;blazor</PackageTags>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\assets\nuget.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.8.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.1" GeneratePathProperty="true" />
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+    <None Include="$(PkgSystem_Text_Json)\lib\netstandard2.0\*.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="bin\Debug\netstandard2.0\\Primer.IconGenerator.dll" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+﻿@namespace Primer.Components
+@inherits PrimerComponentBase
+
+@if (Visible)
+{
+    <button type="button" class="@ClassGenerator.Class" @onclick="OnClick" aria-selected="@Selected.ToString().ToLower()" aria-disabled="@Selected.ToString().ToLower()">
+        @ChildContent
+    </button>
+}
