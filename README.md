@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300px" src="/assets/readme-components.png" />
+  <img width="300px" src="/assets/readme.png" />
 </p>
 
 <h1 align="center">Primer Blazor Components</h1>
