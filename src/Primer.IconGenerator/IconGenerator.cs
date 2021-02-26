@@ -119,6 +119,7 @@ namespace Primer.IconGenerator
             sourceBuilder.AppendLine("        {");
 
             sourceBuilder.AppendLine($"            ClassGenerator.Add(\"octicon\").Add(\"octicon-{json.GetProperty("name")}\");");
+            sourceBuilder.AppendLine("            base.OnInitialized();");
 
             // End of OnInitialized
             sourceBuilder.AppendLine("        }");

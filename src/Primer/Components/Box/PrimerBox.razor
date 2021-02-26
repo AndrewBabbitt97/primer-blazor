@@ -1,0 +1,9 @@
+﻿@namespace Primer.Components
+@inherits PrimerComponentBase
+
+@if (Visible)
+{
+    <PrimerDynamicElement Tag="div" class="@ClassGenerator.Class">
+        @ChildContent
+    </PrimerDynamicElement>
+}

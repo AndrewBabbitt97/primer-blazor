@@ -16,6 +16,11 @@ namespace Primer.Components
         public RenderFragment ChildContent { get; set; }
 
         /// <summary>
+        /// The tag to render the component with
+        /// </summary>
+        public override string As { get; set; } = "button";
+
+        /// <summary>
         /// Event callback for OnClick
         /// </summary>
         [Parameter]
@@ -86,6 +91,8 @@ namespace Primer.Components
                 .AddIf("btn-block", () => Block)
                 .AddIf("BtnGroup-item", () => ButtonGroupItem)
                 .AddIf("flash-action", () => FlashAction);
+
+            base.OnInitialized();
         }
     }
 }

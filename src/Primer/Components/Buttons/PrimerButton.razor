@@ -3,7 +3,7 @@
 
 @if (Visible)
 {
-    <button type="button" class="@ClassGenerator.Class" @onclick="OnClick" aria-selected="@Selected.ToString().ToLower()" aria-disabled="@Selected.ToString().ToLower()">
+    <PrimerDynamicElement Tag="@As" type="button" class="@ClassGenerator.Class" @onclick="OnClick" aria-selected="@Selected.ToString().ToLower()" aria-disabled="@Disabled.ToString().ToLower()">
         @ChildContent
-    </button>
+    </PrimerDynamicElement>
 }
